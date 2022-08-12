@@ -11,6 +11,10 @@ component:SignupComponent,
 {
   path:'verifyOtp',
   component:VerifyOtpComponent
+},
+{
+  path:'**',
+  redirectTo:'signup'
 }
 ];
 

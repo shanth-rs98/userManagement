@@ -1,0 +1,33 @@
+<form [formGroup]="form" (submit)="signup()">
+  <div class="formContainer">
+  <h1>Sign Up Form</h1>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Username</mat-label>
+    <input matInput name="username" formControlName="userName">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" name="email" formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" name="password" formControlName="password">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Birth Year</mat-label>
+    <input matInput type="number" name="birthYear" formControlName="birthYear">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Phone number</mat-label>
+    <input matInput type="number" name="phoneNumber" formControlName="phoneNumber">
+  </mat-form-field>
+
+
+  <button mat-raised-button  color="primary" type="submit">Signup</button>
+
+  </div>
+  </form>
